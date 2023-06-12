@@ -5,7 +5,7 @@ const Tombol = (props) => {
         borderRadius: 5,
         fontSize : 16,
         fontWeight: "bold",
-        backgroundColor : "yellow",
+        backgroundColor : props.color,
         margin : 2,
         padding : 5
     }

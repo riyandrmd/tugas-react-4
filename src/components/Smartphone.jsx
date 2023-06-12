@@ -26,7 +26,9 @@ const Smartphone = (props) => {
     }
 
 
-
+    const buttonStyle = {
+        backgroundColor : color ? "yellow" : "white",
+    }
 
     return (
         <div style={cardStyle}>
@@ -37,8 +39,8 @@ const Smartphone = (props) => {
                 <p>{props.price}</p>
                 <p style={{display : displayy ? "none" : "inline"}}>{props.desc}</p>
                 <div style={{display : "flex"}}>
-                    <Tombol text= {textt ? "Like" : "Cancel" }  handle = {handleBtnLike} />
-                    <Tombol text="More.." handle = {handleDesc} />
+                    <Tombol text= {textt ? "Like" : "Cancel" } color = {color ? "white" : "yellow"} handle = {handleBtnLike} />
+                    <Tombol text="More.."  handle = {handleDesc} />
                 </div>
             </div>
         </div>
